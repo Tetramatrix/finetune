@@ -1,0 +1,17 @@
+#!/bin/sh
+#############################
+#  Copyright notice
+#  (c) 2008-2016 Chi Hoang 
+#############################
+
+SOURCE="/data/sdext2/dalvik-cache/"
+DEST="/data/dalvik-cache2"
+    
+cd /data/sdext2/app/
+
+busybox find * -type f -exec ln -s "/data/sdext2/app/"{} "/data/app/"{} \;
+
+
+
+
+exit
